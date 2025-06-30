@@ -1,0 +1,110 @@
+/* Da sombra y forma al fondo donde estan los inputs */
+.formulario-libro {
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 40px;
+}
+/* Mantiene los espacios proporcionales entre llos inputs */
+.formulario-libro form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Mantiene a todos los inputs y labels */
+.campo {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Le da color y orden a los lables */
+.campo label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+/*Da color a los bordes y tamano a los inputs  */
+.campo input {
+  padding: 10px;
+  border: 1px solid #221d1d;
+  border-radius: 5px;
+  font-size: 15px;
+}
+/* Le da estilo a los bordes y tamano al input con opciones variadas */
+.campo select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: white;
+  color: #333;
+}
+/* estilos para los botones */
+.boton {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.boton button {
+  background-color: #10B981;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+.boton button:hover{
+    background-color: aquamarine;
+}
+.btn-cancelar {
+    width: 100%;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-cancelar:hover {
+  background-color: #f0f0f0;
+}
+.titulo {
+  display: flex;
+  align-items: center;
+  gap: 12px;         
+  padding-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
+.titulo img.icono {
+  width: 32px;       
+  height: auto;
+}
+
+.titulo h1 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 600;
+  color: #1E3A8A;
+}
+
+
+@media (max-width: 600px) {
+  .campo {
+    flex: 1 1 100%;
+  }
+
+  .boton button {
+    width: 100%;
+  }
+}

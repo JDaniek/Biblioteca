@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Invocacion de los estilos -->
+    <link rel="stylesheet" href="styles/Body Styles.css">
+    <link rel="stylesheet" href="styles/Form Style.css">
+    <title>Ochuklel</title>
+</head>
+<!-- Menu superior -->
+  <nav class="navbar">
+    <div class="contenedor">
+      <ul class="nav-links">
+        <li><a href="#">Libros</a></li>
+        <li><a href="#">Revistas</a></li>
+        <li><a href="#">Periódicos</a></li>
+        <li><a href="#">Préstamos</a></li>
+        <li><a href="#">Alumnos</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+  
+    <!-- Formulario -->
+    <section class="formulario-libro">
+<div class="titulo">
+  <!-- Icono del libro -->
+  <img src="icons/Book open.png" alt="Ícono libro" class="icono">
+  <h1>Registro de nuevo libro</h1>
+</div>
+
+  <form action="#" method="post">
+    <!-- Inputs para el formulario -->
+    <div class="campo">
+      <label for="folio">No. de folio</label>
+      <input type="text" id="folio" name="folio" required>
+    </div>
+
+    <div class="campo">
+      <label for="titulo">Título</label>
+      <input type="text" id="titulo" name="titulo" required>
+    </div>
+
+<div class="campo">
+  <label for="categoria">Categoría</label>
+  <select id="categoria" name="categoria" required>
+    <option value="">Seleccione una categoría</option>
+    <option value="literatura">Literatura</option>
+    <option value="historia">Historia</option>
+    <option value="ciencia">Ciencia</option>
+    <option value="tecnologia">Tecnología</option>
+    <option value="arte">Arte</option>
+    <option value="otros">Otros</option>
+  </select>
+</div>
+
+    <div class="campo">
+      <label for="editorial">Editorial</label>
+      <input type="text" id="editorial" name="editorial" required>
+    </div>
+
+    <div class="campo">
+      <label for="fecha-publicacion">Fecha de publicación</label>
+      <input type="date" id="fecha-publicacion" name="fecha_publicacion" required>
+    </div>
+
+    <div class="campo">
+      <label for="fecha-registro">Fecha de registro</label>
+      <input type="date" id="fecha-registro" name="fecha_registro" required>
+    </div>
+
+    <div class="boton">
+      <button type="submit">Registrar libro</button>
+    </div>
+    <button type="button" class="btn-cancelar">Cancelar</button>
+  </form>
+</section>
+
+  </main>
+</body>
+</html>
